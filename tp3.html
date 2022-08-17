@@ -9,12 +9,6 @@
         <title>formulair</title>
     </head>
     <body>
-        <h4>Bonjour la date est <time datetime="2022-08-12"> 12 aout 2022 </time></h4>
-        <label for="start">Bonjour la date est:</label>
-        <input type="date" id="start" name="trip-start"
-                value="2022-08-12"
-                min="2022-08-12" max="2022-12-31">
-         
         <h4 id="pp" style="text-align: centre;"></h4>
       
         <form action="" >
@@ -22,50 +16,52 @@
                 <legend>INSCRIPTION</legend>
                     <table>
                         <tr><td><label for="fname">Nom:</label><span style="color: brown;">*</span></td>
-                        <td><input type="text" id="fname" Nom="" >
-                            <p id="err" style="display:none;">Veuillez entre votre nom</p></td></tr>
+                        <td><input type="text" id="fname" Nom="" ></td>
+                        <td><p id="err" style="display:none;color: red">Veuillez entre votre nom</p></td></tr>
 
                         <tr><td><label for="lname">Prénom :</label><span style="color: brown;">*</span></td>
-                        <td><input type="text" id="lname" Prénom="">
-                            <p id="err2"></p></td></tr>
+                        <td><input type="text" id="lname" Prénom=""></td>
+                        <td><p id="err2" style="color: red;"></p></td></tr>
 
                         <tr><td><label for="dn">Date de Naissance</label><span style="color: brown;">*</span></td>
-                        <td><input type="date" id="dn" >
-                            <p id="err5"></p></td></tr>
+                        <td><input type="date" id="dn" ></td>
+                        <td><p id="err5" style="color: red;"></p></td></tr>
 
                         <tr><td><label for="code">Code Postale:</label><span style="color: brown;">*</span></td>
-                        <td><input type="text" id="code" code postal="" >
-                            <p id="err3"></p></td></tr>
+                        <td><input type="text" id="code" code postal="" ></td>
+                        <td><p id="err3" style="color: red;"></p></td></tr>
                     
                         <tr><td><label for="paye">Pays:</label><span style="color: brown;">*</span></td>
                         <td><select name="paye" id="paye">
                         <option type="text" id="paye"></option><br>
                         <option type="text" id="paye" value="maroc">MAROC</option><br>
-                        <option type="text" id="paye" value="france">FRANCE</option> 
-                        </select>
-                        <p id="err4"></p></td></tr>  
+                        <option type="text" id="paye" value="france">FRANCE</option></select></td>
+                        <td><p id="err4" style="color: red;"></p></td></tr>  
                         
-                        <tr><td><label for="genre">GENRE:</label><span style="color: brown;">*</span></td>
+                        <tr><td><label for="genre">Genre:</label><span style="color: brown;">*</span></td>
                         <td><input type="radio" id="men" name="genre"><label>MASCULAIN</label>
-                        <input type="radio" id="fem" name="genre"><label>FEMININ</label>
-                        <p id="err6"></p></td></tr>
+                        <input type="radio" id="fem" name="genre"><label>FEMININ</label></td>
+                        <td><p id="err6" style="color: red;"></p></td></tr>
                         
                         <tr><td><label for="pf">Préference de contact :</label><span style="color: brown;">*</span></td>
-                        <td><input type="checkbox" id="pf" value="fax"><label for="pf">Fax</label>
-                        <input type="checkbox" id="pf" value="fax"><label for="pf">Email</label>
-                        <input type="checkbox" id="pf" value="fax"><label for="pf">Téléphone</label></td></tr>
+                        <td><input type="checkbox" id="pf" value="fax" name="con"><label for="pf">Fax</label>
+                        <input type="checkbox" id="pf" value="fax" name="con"><label for="pf">Email</label>
+                        <input type="checkbox" id="pf" value="fax" name="con"><label for="pf">Téléphone</label></td>
+                        <td><p id="err9" style="color: red;"></p></td></tr>
 
                         <tr><td><label for="mail">Email:</label><span style="color: brown;">*</span></td>
-                        <td><input type="text" id="mail" Nom="" >
-                            <p id="err7"></p></td></tr>
+                        <td><input type="text" id="mail" Nom="" ></td>
+                        <td><p id="err7" style="color: red;"></p></td></tr>
 
-                        <tr><td><label for="passw">PassWord (6-8 characters):</label></td>
-                        <td><input type="text" id="passw" Nom="passw" value="    "></td></tr>
+                        <tr><td><label>PassWord (6-8 characters):</label></td>
+                        <td><input type="password" id="passw" ></td>
+                        <td><p id="err10" style="color: red;"></p></td></tr>
 
                         <tr><td><label for="vpass"> Verification PassWord:</label><span style="color: brown;">*</span></td>
-                        <td><input type="password" name="" id="vpass"></td></tr> 
+                        <td><input type="password" name="" id="vpass"></td>
+                        <td><p id="err8" style="color: red;"></p></td></tr> 
                        
-                        <tr><td><input type="button" value="Envoyer" onclick="validateForm();" >
+                        <tr><td><input type="button" value="Envoyer" onclick="validateForm();">
                         <input type="reset"  value="Effacer"></td></tr>
 
                      <p id="yr">yrs</p>     
